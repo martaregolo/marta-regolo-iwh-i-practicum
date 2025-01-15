@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= pageTitle
+  body
+    h1 Update Custom Object Form
+    form(action="/update-cobj" method="POST")
+      div
+        label(for="name") Name:
+        input(type="text" name="name" required)
+      div
+        label(for="game") Game:
+        input(type="text" name="game" required)
+      div
+        label(for="role") Role:
+        input(type="text" name="role" required)
+      button(type="submit") Submit
+    a(href="/") Return to the homepage

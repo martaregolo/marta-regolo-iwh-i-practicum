@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= pageTitle
+  body
+    h1 Custom Object Records
+    a(href="/update-cobj") Add to this table
+    table
+      thead
+        tr
+          th Name
+          th Game
+          th Role
+      tbody
+        each record in records
+          tr
+            td= record.properties.name || 'N/A'
+            td= record.properties.game || 'N/A'
+            td= record.properties.role || 'N/A'
